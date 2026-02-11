@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Login1-Page — a clean authentication experience. Log in or create an account to get started." />
+    <meta name="keywords" content="welcome, login, register, authentication" />
+    <meta name="author" content="Login1-Page" />
+    <title>Welcome — Login1-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans antialiased min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-4 py-16 sm:px-6">
+      <div class="w-full max-w-md text-center space-y-10">
+
+        <!-- Logo / Brand -->
+        <div class="space-y-4">
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-lg shadow-indigo-200">
+            <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </div>
+
+          <h1 class="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">
+            Login1-Page
+          </h1>
+        </div>
+
+        <!-- Hero Text -->
+        <div class="space-y-3">
+          <h2 class="text-xl font-semibold text-gray-800 sm:text-2xl">
+            Welcome back 👋
+          </h2>
+          <p class="text-gray-500 text-base leading-relaxed max-w-sm mx-auto">
+            Sign in to your account or create a new one to get started with our platform.
+          </p>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="space-y-3">
+          <a
+            href="auth.html?mode=login"
+            class="block w-full rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-indigo-200 hover:from-indigo-700 hover:to-purple-700 hover:shadow-lg transition-all duration-200"
+          >
+            Log In
+          </a>
+
+          <a
+            href="auth.html?mode=register"
+            class="block w-full rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 hover:border-gray-400 transition-all duration-200"
+          >
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Subtle info -->
+        <p class="text-xs text-gray-400">
+          No credit card required &middot; Free to use
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center">
+      <p class="text-xs text-gray-400">&copy; 2026 Login1-Page. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
